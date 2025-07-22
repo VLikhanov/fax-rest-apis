@@ -6,13 +6,13 @@ Contains OpenAPI descriptions and documentation for Retarus Cloud Fax APIs.
 ### `/latest/` Directory
 
 #### Purpose
-- Contains the current, active versions of all APIs.
+- Contains the current, active versions of all Retarus Cloud Fax APIs.
 
 #### Redocly Integration
-- Individual `openapi/` subdirectories are watched by **Redocly** for documentation generation.
+- Individual `openapi/` subdirectories are watched by **Redocly** for API documentation generation (see https://developers.retarus.com/).
 
 #### Content
-- Each API has its own subdirectory with **OpenAPI 3.x** specifications and additional content.
+- Each API has its own subdirectory with **OpenAPI 3.x** specifications and additional content (e.g., `CHANGELOG.md`).
 
 #### Format
 - **OpenAPI 3.x only** — no Swagger 2.x files.
