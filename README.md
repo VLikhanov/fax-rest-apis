@@ -12,7 +12,7 @@ Contains OpenAPI descriptions and documentation for Retarus Cloud Fax APIs.
 - Individual `openapi/` subdirectories are watched by **Redocly** for API documentation generation (see https://developers.retarus.com/).
 
 #### Content
-- Each API has its own subdirectory with **OpenAPI 3.x** specifications and additional content (e.g., `CHANGELOG.md`).
+- Each API has its own subdirectory with **OpenAPI 3.x** specifications and (optional) some additional content.
 
 #### Format
 - **OpenAPI 3.x only** — no Swagger 2.x files.
@@ -50,10 +50,16 @@ These files are in legacy maintenance mode and will not receive updates.
 ### `/versions/` Directory
 
 #### Purpose
-- Archives historical versions of APIs for reference.
+- Archives historical versions of REST APIs for reference.
 
 #### Format & Content
 - Contains only **OpenAPI 3.x** files and changelogs.
+
+---
+
+### **Changelog**
+
+A single `CHANGELOG.md` file in the root directory contains changes for all APIs, providing a unified change history across the entire Retarus Cloud Fax API suite.
 
 ---
 
@@ -66,21 +72,21 @@ These files are in legacy maintenance mode and will not receive updates.
 
   - **Current Version:** Located in `latest/sending-fax-api/` (**OpenAPI 3.x**)
   - **Legacy Version:** `legacy/sending-fax-api-swagger-2x.json` ⚠️ DEPRECATED
-  - **Historical Versions:** `versions/sending-fax-api/v1.0/`...
+  - **Historical Versions:** `versions/sending-fax-api/v[version_number]/`
 
 ### 2. Receiving Fax API
 - Manages incoming fax reception, processing, and notification handling.
 
   - **Current Version:** Located in `latest/receiving-fax-api/` (**OpenAPI 3.x**)
   - **Legacy Version:** `legacy/receiving-fax-api-swagger-2x.json` ⚠️ DEPRECATED
-  - **Historical Versions:** `versions/receiving-fax-api/v1.0/`...
+  - **Historical Versions:** `versions/receiving-fax-api/v[version_number]/`
 
-### 4. Fax Status API
+### 3. Fax Status API
 - Provides real-time status tracking and delivery confirmation for sent faxes.
 
   - **Current Version:** Located in `latest/fax-status-push-api/` (**OpenAPI 3.x**)
   - **Legacy Version:** `legacy/fax-status-api-swagger-2.x.json` ⚠️ DEPRECATED
-  - **Historical Versions:** `versions/fax-status-api/v1.0/`...
+  - **Historical Versions:** `versions/fax-status-api/v[version_number]/`
 
 ---
 
